@@ -1,0 +1,119 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    background-image: url('images/background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: absolute;
+}
+
+/* Container Styling */
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #5f0870;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #5a0c79;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #450769;
+}
+
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: #7a1075;
+    color: #fff;
+}
+
+.clear-btn {
+    background-color: #e70adc;
+    color: #fff;
+}
+
+.clear-btn:hover {
+    background-color: #e907e9;
+}
+
+/* Shopping List */
+.shopping-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.shopping-list li {
+    background: #f9f9f9;
+    border: 2px solid #eee;
+    padding: 10px 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.shopping-list li:hover {
+    background-color: #f4f4f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shopping-list li.purchased {
+    background-color: #d4edda;
+    text-decoration: line-through;
+    color: #155724;
+}
+
+/* Delete Button */
+.shopping-list li button {
+    background: #660803;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.shopping-list li button:hover {
+    background-color: #660906;
+}
